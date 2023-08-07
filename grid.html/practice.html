@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            background-color: dodgerblue;
+            height: 800px;
+            display: grid;
+            row-gap: 5px;
+            column-gap: 5px;
+            /* grid-template-rows: 200px 200px 200px; */
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-rows: 100px 1fr 1fr 100px;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+            /* grid-template-rows: repeat(5,1fr);
+            grid-template-columns: repeat(5,1fr);
+             */
+        }
+        .box{
+             /* width: 150px; */
+            /* height: 150px;  */
+            background-color: rgb(240, 140, 200);
+              /* margin: 10px;   */
+              }
+              #header{
+                grid-column-start: 1;
+                grid-column-end: 4;
+                font-size: 50px;
+                color: white;
+                text-align: center;
+                
+              }
+              #section{
+                grid-row-start: 2;
+                grid-row-end: 4;
+                font-size: 50px;
+                color: white;
+                text-align: center;     
+              }
+              #aside{
+                  font-size: 50px;
+                color: white;
+                text-align: center;
+                grid-column-start: 2;
+                grid-column-end: 4;
+              }
+              #footer{
+                 font-size: 50px;
+                color: white;
+                text-align: center;
+                grid-column-start: 1;
+                grid-column-end: 4;
+              }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box" id="header">header</div>
+        <div class="box" id="section">section</div>
+        <div class="box" id="aside">aside</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box" id="footer">footer</div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </section>
+</body>
+</html>
